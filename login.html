@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Container */
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+
+/* Buttons */
+button {
+       width: 41%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 80px;
+    font-size: 16px;
+    cursor: pointer;
+    transform: translate(106px, 10px);
+}
+
+/* Login Button */
+button:nth-child(3) {
+    background: #27ae60;
+    color: white;
+}
+
+button:nth-child(3):hover {
+    background: #219150;
+}
+
+/* Logout Button */
+button:nth-child(4) {
+    background: #e74c3c;
+    color: white;
+}
+
+button:nth-child(4):hover {
+    background: #c0392b;
+}
+
+/* Insert Data Button */
+button:nth-child(5) {
+    background: #2980b9;
+    color: white;
+}
+
+button:nth-child(5):hover {
+    background: #1c5a86;
+}
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <div class="sidebar" id="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="login.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="navbar">
+      <div class="menu-btn" id="menu-btn">☰</div>
+      <div class="logo">Major 5 * Hotel</div>
+      <div class="nav-items">
+        <input type="search" placeholder="Search..." />
+        <div class="icon">🔔</div>
+        <div class="icon">⚙️</div>
+        <div class="icon">👤</div>
+      </div>
+    </div>
+
+
+
+    <form action="" >
+    <input type="text" id="username" placeholder="Enter Username">
+<input type="password" id="password" placeholder="Enter Password">
+<button onclick="loginUser()"><a style="text-decoration: none;" href="/index.html">Login</a></button>
+
+<!-- <button id="btn1">Insert Data</button> -->
+</form>
+
+<script src="/insert.js"></script>
+
+</body>
+</html>

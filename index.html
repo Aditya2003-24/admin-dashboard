@@ -1,11 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Sidebar Toggle</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><button class="logout" onclick="logoutUser()">Logout</button></li>
+      </ul>
+    </div>
+
+    <div class="navbar">
+      <div class="menu-btn" id="menu-btn">☰</div>
+      <div class="logo">Major 5 * Hotel</div>
+      <div class="nav-items">
+        <input type="search" placeholder="Search..." />
+        <div class="icon">🔔</div>
+        <div class="icon">⚙️</div>
+        <div class="icon">👤</div>
+      </div>
+    </div>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="hotel-7885138_1280.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/beach-1867137_1280.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/indoors-4234071_1280.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/living-room-581073_1280.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/palma-3172367_1280.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/paradise-598201_1280.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/resort-4471852_1280.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/restaurant-1837150_1280.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/table-setting-6859274_1280.jpg" alt="" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <br />
+    <p id="demo"></p>
+
+    <div class="Beach" style="text-align: center; margin-top: 50px">
+      <h1>Beach Hotel- More than a stay</h1>
+      <p style="text-align: center">
+        In vitae nisi aliquam, scelerisque leo a, volutpat sem. Vivamus rutrum
+        dui fermentum eros hendrerit, id lobortis leo volutpat.<br />
+        Maecenas sollicitudin est in libero pretium interdum.
+      </p>
+    </div>
+
+    <div class="img">
+      <div>
+        <img src="images/roof-top-pool-3715118_1280.jpg" alt="" />
+        <h1>Hotel book</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          voluptatibus dolorem eaque nulla non accusamus.
+        </p>
+      </div>
+      <div>
+        <img src="images/santorini-360215_640.jpg" alt="" />
+        <h1>Hotel book</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          voluptatibus dolorem eaque nulla non accusamus.
+        </p>
+      </div>
+      <div>
+        <img src="images/sea-943428_1280.jpg" alt="" />
+        <h1>Hotel book</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          voluptatibus dolorem eaque nulla non accusamus.
+        </p>
+      </div>
+    </div>
     
-</body>
+
+    <div class="input" style="text-align: center">
+      <input id="nm" type="text" placeholder="Name" value="sumit" />
+      <select class="user" id="ro">
+        <option value="Double">Double room</option>
+        <option value="Single" selected>Single room</option>
+        <option value="room">Triple room</option>
+      </select>
+      <input id="in" type="date" placeholder="checkin" />
+      <input id="out" type="date" placeholder="checkout" /><br />
+      <button id="btn" type="submit">Submit</button>
+    </div>
+
+    <footer>
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h2>HotelName</h2>
+            <p>Your perfect stay starts here. Book luxurious rooms at affordable prices.</p>
+        </div>
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@hotelname.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Location: 123 Street, City, Country</p>
+        </div>
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        
+    </div>
+</footer>
+
+
+
+
+    <!-- script section -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const sidebar = document.getElementById("sidebar");
+      const content = document.getElementById("content");
+
+      menuBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("hidden");
+        // content.classList.toggle("shift");
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="/update2.js"></script>
+    <script src="insert.js"></script>
+    
+
+  </body>
 </html>
