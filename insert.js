@@ -43,9 +43,7 @@ async function dataInsert() {
 
   if (response.ok) {
     alert("Data saved successfully!");
-  } else {
-    alert("Error saving data!");
-  }
+  } 
 }
 
 // Login function
